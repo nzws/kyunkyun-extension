@@ -1,5 +1,5 @@
 chrome.browserAction.onClicked.addListener(() => {
-  chrome.tabs.create({ url: 'https://yukiya.me/kyun' });
+  chrome.tabs.create({ url: 'https://kyun.yukiya.me/' });
 });
 
 chrome.contextMenus.create({
