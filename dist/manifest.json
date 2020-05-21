@@ -1,0 +1,26 @@
+{
+  "name": "kyunkyun-extension",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "Easily access internet meme",
+  "background": {
+    "scripts": ["build/background/index.js"],
+    "persistent": true
+  },
+  "content_scripts": [
+    {
+      "js": ["build/content/index.js"],
+      "matches": ["http://*/*", "https://*/*"]
+    }
+  ],
+  "permissions": ["contextMenus"],
+  "browser_action": {
+    "default_title": "kyunkyun"
+  },
+  "icons": {
+    "16": "assets/icon_16.png",
+    "32": "assets/icon_32.png",
+    "48": "assets/icon_48.png",
+    "128": "assets/icon_128.png"
+  }
+}
