@@ -7,13 +7,7 @@
     "scripts": ["build/background/index.js"],
     "persistent": true
   },
-  "content_scripts": [
-    {
-      "js": ["build/content/index.js"],
-      "matches": ["http://*/*", "https://*/*"]
-    }
-  ],
-  "permissions": ["contextMenus"],
+  "permissions": ["contextMenus", "activeTab"],
   "browser_action": {
     "default_title": "kyunkyun"
   },

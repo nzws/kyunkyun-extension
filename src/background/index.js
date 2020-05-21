@@ -5,7 +5,7 @@ chrome.browserAction.onClicked.addListener(() => {
 chrome.contextMenus.create({
   title: 'Paste ゆ❤️き❤️や❤️きゅ〜っきゅっきゅｷｭｷｭｷｭｷ (ry',
   contexts: ['editable'],
-  onclick(_, tab) {
-    chrome.tabs.sendMessage(tab.id, 'paste', null);
+  onclick() {
+    chrome.tabs.executeScript(null, { file: 'build/content/index.js' });
   }
 });
