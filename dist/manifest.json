@@ -7,7 +7,7 @@
     "scripts": ["build/background/index.js"],
     "persistent": true
   },
-  "permissions": ["contextMenus", "activeTab"],
+  "permissions": ["contextMenus", "activeTab", "storage"],
   "browser_action": {
     "default_title": "kyunkyun"
   },
